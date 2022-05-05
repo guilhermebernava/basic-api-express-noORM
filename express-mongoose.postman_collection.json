@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "f3b8f818-6a83-4593-afc5-8ce7b205d0c3",
+		"name": "express-mongoose",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Livro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"teste\",\n    \"author\": \"orlando\",\n    \"editora\": \"pablin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http//:localhost:3000/livros",
+					"host": [
+						"http"
+					],
+					"path": [
+						"",
+						":localhost:3000",
+						"livros"
+					],
+					"variable": [
+						{
+							"key": "localhost:3000",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Livro",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"gostosas de baixa renda\",\n    \"autor\": \"israel\",\n    \"editora\": \"pablin e orlandin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/livro/6273f805d104ae225dda9795",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livro",
+						"6273f805d104ae225dda9795"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Livro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/livro/6273f805d104ae225dda9795",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livro",
+						"6273f805d104ae225dda9795"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LivroById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/livro/6273f805d104ae225dda9795",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livro",
+						"6273f805d104ae225dda9795"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Livros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/livro",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Livro",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
