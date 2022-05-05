@@ -5,7 +5,7 @@
     "lib": ["es2019"],
     "sourceMap": true,
     "outDir": "dist",
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "noImplicitThis": true,
